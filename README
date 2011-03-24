@@ -1,0 +1,75 @@
+***************
+*** CDCover ***
+***************
+(c) Magnus Schmidt <xmms@27b-6.de>, 2003
+http://ducts.27b-6.de/cdcover
+
+
+
+ABOUT
+"""""
+CDCover is a plugin for xmms, which displays a graphic dependent on
+the currently played song. Normal usage would be to display the 
+CD covers for the different songs. The graphics are retrieved from
+your computer. Therefore searchpaths can be defined, where a corresponding
+cover is searched for.
+
+
+
+FEATURES
+""""""""
+- Define as many different search paths as you need, including wildcards
+- Buildin skin, full support for custom skins
+- Many different graphic formats (supported formats depend on your
+  gtk installation)
+- Automatically resizes the images, and preserves aspect-ratio upon request
+
+
+
+REQUIREMENTS
+""""""""""""
+- gdk,glib and gdk-pixbuf >= 1.2.2
+- xmms >= 1.2.4
+
+Tested on:
+- Debian Linux (sid) x86 (gcc 2.95.4 and gcc 3.2.3) 
+
+
+
+INSTALLATION
+""""""""""""
+A simple
+	# ./configure
+	# make
+	# make install
+should do the trick. Depending on your installation, you must be root
+for make install.
+
+
+
+SKINS
+"""""
+This plugin comes with a inbuild skin. However custom skins are fully
+supported. You can download other skins on the homepage. For skin
+creation see README.skin
+The plugin searches for custom skins in this directory:
+	~/.xmms/CDcover/
+
+
+
+LICENSE
+"""""""
+GPL, see file COPYING
+
+
+
+CONTACT
+"""""""
+Magnus Schmidt
+eMail: xmms@27b-6.de
+URL:   http://ducts.27b-6.de/cdcover
+
+
+
+-- 
+Last Change: 2003-03-09

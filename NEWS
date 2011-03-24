@@ -1,0 +1,7 @@
+New features in this version:
+	* Added wildcard-support (*) in searchpaths (requested by caligari)
+	* Added custom skin support
+	* Added option to preserve aspect ratio (requested by caligari)
+	* Added helptab in configuration dialog
+
+For a complete list see ChangeLog

@@ -1,0 +1,51 @@
+Creating your own skin
+""""""""""""""""""""""
+
+Creating your own skin is pretty easy. If you have done any nice ones,
+you may send me these to xmms@27b-6.de so I can include them in the
+skin download section.
+
+
+
+Step 1 - Create the graphics
+""""""""""""""""""""""""""""
+Create you skin in your favorite graphics program. The skin can be of
+any size you want.
+Then save it under any name you want. The format must be one, that gtk
+recognizes. BMP or JPG will work of course, however jpg may degrade your
+skin, as it uses a lousy compression (whereas e.g. BMP does not compress
+at all).
+
+
+Step 2 - Create the ini
+"""""""""""""""""""""""
+Now that you have saved your skin, the plugin needs to know where to place
+the cover, and some other data. Therefore a so called ini-File is created,
+where all this info resides in. With a text-editor create a textfile with
+following contents:
+
+[Skin]
+skintype=CDcover-skin
+author=<Your name and skin info>
+title=<Name of the skin>
+file=<Name of the graphic file>
+coverx=<X-Position of upper left corner of the cover display area> 
+covery=<Y-Position of upper left corner of the cover display area> 
+coverwidth=<Width of the display area>
+coverheight=<Height of the display area>
+
+Replace the tags <...> with the correct values. Note that the filename
+must be a name of a file in the same directory, so no path must be
+included.
+
+
+Step 3 - Save the skin
+""""""""""""""""""""""
+CDcover only finds your skin when it is in the correct directory, which 
+must be
+	~/.xmms/CDcover/
+Save all graphics and ini-files into this directory.
+If you have done everything right, your skin will now show up in the
+configuration dialog.
+
+

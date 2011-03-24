@@ -1,0 +1,10 @@
+Version 0.2 - 2003-03-09
+	* Added wildcard-support (*) in searchpaths (requested by caligari)
+	* Added custom skin support
+	* Added option to preserve aspect ratio (requested by caligari)
+	* Added helptab in configuration dialog
+	* Minor bugfixes
+	* removed subminor version-number
+
+Version 0.1.0 - 2003-03-06
+	* public beta 
