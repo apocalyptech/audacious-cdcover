@@ -1,10 +1,39 @@
+WARNING: This is almost certainly not the project you want.  It's only
+on github so I've got it backed up elsewhere.  The whole thing could
+use a gigantic amount of bleach.
+
 ***************
 *** CDCover ***
 ***************
 (c) Magnus Schmidt <xmms@27b-6.de>, 2003
 http://ducts.27b-6.de/cdcover
 
+Updated by CJ Kucera <pez@apocalyptech.com> since then, to support
+newer versions of the support libraries (gtk, etc) and the media
+player itself (currently Audacious 2.4.4).
 
+The "REQUIREMENTS" down there are almost certainly out of date,
+and you should take anything you find here with a huge grain of salt.
+
+This project has also been since modified to be a little more proactive
+about finding album art.  The gui should theoretically let you specify
+a list of extensions to choose from, and a list of relative directories
+to search in.  For instance, in my config it'll search for
+cover.(png|jpg|gif) in the current directory, and then for the same
+three files in up to two more parent directories.  I do this because
+I keep multi-disc albums in separate dirs and tend to keep the cover
+art in the parent folder.
+
+Anyway, no guarantees as to whether or not the preferences screen
+actually works or not; this has been essentially untouched by me since
+I first hacked in support for it, and it's possible that I just edited
+the gconf tree directly rather than fix a bug, or something.
+
+YOUR MILEAGE MAY VARY; VIEWER DISCRETION IS ADVISED
+
+DON'T BLAME ME IF THIS TOTALLY DESTROYS YOUR COMPUTER OR SOMETHING
+
+Original README follows:
 
 ABOUT
 """""
