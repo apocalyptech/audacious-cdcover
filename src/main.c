@@ -86,7 +86,6 @@ static VisPlugin xmms_vp =
     .configure = xmmsplugin_configure,
     .num_pcm_chs_wanted = 0,
     .num_freq_chs_wanted = 1,
-    .disable_plugin = xmmsplugin_disable_plugin,
     .playback_start = xmmsplugin_playback_start,
     .playback_stop = xmmsplugin_playback_stop,
     .render_pcm = 0,

@@ -1,0 +1,8 @@
+*.swp
+Makefile
+*.lo
+*.la
+.libs
+config.log
+config.status
+libtool
