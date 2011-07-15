@@ -10,7 +10,7 @@ http://ducts.27b-6.de/cdcover
 
 Updated by CJ Kucera <pez@apocalyptech.com> since then, to support
 newer versions of the support libraries (gtk, etc) and the media
-player itself (currently Audacious 2.4.4).
+player itself (currently Audacious 2.5.3, from Fedora 15).
 
 The "REQUIREMENTS" down there are almost certainly out of date,
 and you should take anything you find here with a huge grain of salt.

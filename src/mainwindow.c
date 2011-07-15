@@ -243,7 +243,7 @@ void loadimage (char *filename) {
 
 gboolean checkcover (gint tag) {
 	gint  playlist_position;
-    gchar *playlist_uri = NULL;
+    //gchar *playlist_uri = NULL;
     gchar *playlist_filename = NULL;
     gint playlist = aud_playlist_get_active();
     gboolean processed = 0;
@@ -255,12 +255,12 @@ gboolean checkcover (gint tag) {
     const Tuple *tuple = aud_playlist_entry_get_tuple(playlist, playlist_position, fast_call);
     if (tuple)
     {
-        playlist_uri = g_strdup((gchar *) tuple_get_string(tuple, FIELD_FILE_PATH, NULL));
-        if (playlist_uri)
+        playlist_filename = g_strdup((gchar *) tuple_get_string(tuple, FIELD_FILE_PATH, NULL));
+        if (playlist_filename)
         {
-            playlist_filename = g_filename_from_uri(playlist_uri, NULL, NULL);
+            /*playlist_filename = g_filename_from_uri(playlist_uri, NULL, NULL);
             if (playlist_filename)
-            {
+            {*/
                 if (strcmp (playlist_filename,current_filename) && !mainwindow_data.loading_cover)
                 {
                     mainwindow_data.loading_cover = TRUE;
@@ -275,9 +275,9 @@ gboolean checkcover (gint tag) {
                     mainwindow_data.loading_cover = FALSE;
                 }
                 free (playlist_filename);
-                free (playlist_uri);
+                //free (playlist_uri);
                 processed = 1;
-            }
+            /*}*/
         }
     }
 

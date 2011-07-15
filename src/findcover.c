@@ -176,6 +176,7 @@ char *findcover_search (char *filename) {
 	position = plugin_config->cover_searchpaths;
 	extposition = plugin_config->cover_extensions;
 
+
 	while (position!=NULL)
 	{
 		char *cover_dirname,*cover_dirname_tmp,*cover_basename,*cover_basename_tmp;
